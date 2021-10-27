@@ -5,7 +5,9 @@ const periods = document.querySelectorAll(".period");
 let data;
 
 async function getData() {
-  let res = await fetch("../dist/data.json");
+  let res = await fetch(
+    "https://talentlessdeveloper.github.io/time-tracking-dashboard/dist/data.json"
+  );
   data = await res.json();
 }
 
