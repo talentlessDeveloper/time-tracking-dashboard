@@ -5,7 +5,7 @@ const periods = document.querySelectorAll(".period");
 let data;
 
 async function getData() {
-  let res = await fetch("../data.json");
+  let res = await fetch("../dist/data.json");
   data = await res.json();
 }
 
